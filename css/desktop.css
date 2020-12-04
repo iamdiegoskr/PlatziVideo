@@ -13,12 +13,12 @@ body {
 /*HEADER*/
 
 .header {
-    width: 100%;
-    height: auto;
-    padding: 8px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    padding: 8px;
+    width: 100%;
 }
 
 .header__img {
@@ -36,10 +36,10 @@ body {
 }
 
 .header__menu--profile {
-    height: 100%;
-    display: flex;
     align-items: center;
     cursor: pointer;
+    display: flex;
+    height: 100%;
 }
 
 .header__menu--profile>* {
@@ -51,13 +51,13 @@ body {
 }
 
 .header__menu--options {
-    height: 54px;
-    display: none;
-    list-style: none;
-    text-align: right;
-    position: absolute;
     bottom: -54px;
+    display: none;
+    height: 54px;
+    list-style: none;
+    position: absolute;
     right: 0;
+    text-align: right;
 }
 
 .header__menu--options li {
@@ -71,4 +71,5 @@ body {
 
 .header__menu--options li a:hover {
     font-weight: bold;
+    text-decoration: underline;
 }
