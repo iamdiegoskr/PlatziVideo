@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+}
+
 body {
-    background: #ea2c62;
     font-family: 'Mulish', sans-serif;
+    background-image: url('https://images.pexels.com/photos/2418664/pexels-photo-2418664.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -72,4 +78,206 @@ body {
 .header__menu--options li a:hover {
     font-weight: bold;
     text-decoration: underline;
+}
+
+
+/*SEARCH*/
+
+
+/* .search-container {
+    margin: 0 auto;
+    padding: 80px 0px;
+    text-align: center;
+    width: 60%;
+}
+
+.search-container>* {
+    margin-bottom: 16px;
+}
+
+.search-container .search__title {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.search-container .search__input {
+    background-image: url(../img/icons8-search-24.png);
+    background-position-x: 98%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background: #400082;
+    border-radius: 16px;
+    border: 2px solid #fff;
+    padding: 10px 18px;
+    width: 100%;
+}
+
+.search-container .search__input:focus {
+    background: #fff;
+    color: #000;
+}
+
+.search-container .search__input::placeholder {
+    color: rgb(197, 197, 197);
+} */
+
+
+/*LOGIN*/
+
+.login {
+    width: 100%;
+    min-height: calc(100vh - 200px);
+    padding: 80px 0px;
+}
+
+.login__container {
+    width: 410px;
+    height: 560px;
+    border: 2px solid white;
+    margin: 0 auto;
+    border-radius: 18px;
+    padding: 48px;
+    background: rgb(0 0 0 / 72%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.login .login__tittle {
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.login__form {
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.login__form>* {
+    margin-bottom: 24px;
+}
+
+.login__container .input {
+    width: 100%;
+    display: block;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 3px 12px;
+}
+
+.login__form .login__button {
+    width: 100%;
+    padding: 14px;
+    background: #7c6af080;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: .9rem;
+    letter-spacing: 1.2px;
+}
+
+.login__form .login__button:hover {
+    background: #59016c;
+}
+
+.login__container input::placeholder {
+    color: rgba(255, 255, 255, .8);
+    font-weight: bold;
+}
+
+.login__form--remember-me {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login__form--remember-me a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.login__form--remember-me a:hover {
+    text-decoration: underline;
+}
+
+.login__form--remember-me label input {
+    margin-right: 6px;
+}
+
+.login__container--social-media {
+    margin-bottom: 30px;
+}
+
+.login__container--social-media .social-media-icon {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-google {
+    background-image: url('../img/icons8-google-plus-64.png');
+}
+
+.icon-twiter {
+    background-image: url('../img/icons8-twitter-48.png');
+}
+
+.social-media-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.social-media-info span {
+    margin-right: 8px;
+}
+
+.login__container--acount {
+    color: #fff;
+    text-align: center;
+}
+
+.login__container--acount a {
+    text-decoration: none;
+    color: #5dff65;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.login__container--acount a:hover {
+    text-decoration: underline;
+}
+
+
+/*footer*/
+
+.footer {
+    background: rgb(40 2 48 / 73%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-right: 20px;
+}
+
+.footer a:hover {
+    color: #00c9ff;
 }
