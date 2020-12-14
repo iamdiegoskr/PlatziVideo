@@ -11,7 +11,7 @@
 body {
     font-family: 'Mulish', sans-serif;
     background-image: url('https://images.pexels.com/photos/2418664/pexels-photo-2418664.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    background-size: cover;
+    /* background-size: cover; */
     background-repeat: no-repeat;
 }
 
@@ -83,10 +83,9 @@ body {
 
 /*SEARCH*/
 
-
-/* .search-container {
+.search-container {
     margin: 0 auto;
-    padding: 80px 0px;
+    padding: 50px 0px;
     text-align: center;
     width: 60%;
 }
@@ -96,7 +95,7 @@ body {
 }
 
 .search-container .search__title {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     color: #fff;
 }
 
@@ -106,7 +105,7 @@ body {
     background-position-y: center;
     background-repeat: no-repeat;
     background-size: 24px;
-    background: #400082;
+    background: #2a2341;
     border-radius: 16px;
     border: 2px solid #fff;
     padding: 10px 18px;
@@ -120,7 +119,7 @@ body {
 
 .search-container .search__input::placeholder {
     color: rgb(197, 197, 197);
-} */
+}
 
 
 /*LOGIN*/
@@ -266,17 +265,108 @@ body {
 }
 
 
-/*footer*/
+/*CAROUSEL*/
+
+.carousel {
+    overflow-x: scroll;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.carousel::-webkit-scrollbar {
+    height: 16px;
+    margin-bottom: 80px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    /*Thumb es basicamente la barrita*/
+    background: rgba(0, 0, 0, .7);
+    border-radius: 8px;
+}
+
+.carousel__container {
+    white-space: nowrap;
+    padding: 60px 24px;
+}
+
+.carousel-card {
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    height: 300px;
+    margin-right: 16px;
+    overflow: hidden;
+    position: relative;
+    transform-origin: center left;
+    transition: 450ms all;
+    width: 250px;
+}
+
+.carousel-details {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 50%, rgba(8, 3, 10, 1) 94%);
+    bottom: 0;
+    display: none;
+    left: 0;
+    opacity: 0;
+    padding: 14px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 450ms opacity;
+}
+
+.carousel-details p {
+    color: #fff;
+    font-size: 12px;
+}
+
+.carousel-card:hover .carousel-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 1;
+}
+
+.carousel-details .carouse-images-container img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.carousel-card img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-card:hover~.carousel-card {
+    /* transition: .3s; */
+    /*Se desplazan a la derecha (eje x) 100px, por lo general los valores son ejex ejey ejez*/
+    transform: translate3d(100px, 0, 0);
+}
+
+.carousel__container:hover .carousel-card:not(:hover) {
+    opacity: .3;
+}
+
+.carousel__container:hover .carousel-card:hover {
+    /* opacity: 1; */
+    transform: scale(1.4);
+}
+
+
+/*FOOTER*/
 
 .footer {
     background: rgb(40 2 48 / 73%);
-    /* height: 80px; */
     height: auto;
     display: flex;
     justify-content: center;
     padding: 20px;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .footer a {
@@ -291,6 +381,11 @@ body {
 
 .footer a:hover {
     color: #00c9ff;
+}
+
+.categories-list {
+    color: #fff;
+    margin-left: 40px;
 }
 
 
